@@ -197,8 +197,8 @@ allPlot <- plot_ly(
       #change y axis title
       title = 'New Cases',
       
-      #zoom y axis to 4
-      range = c(0,80))
+      #zoom y axis to exclude negatives
+      rangemode = "nonnegative")
   )
 
 
@@ -245,10 +245,10 @@ radfordPlot <- plot_ly(
       #hide x axis title
       title = FALSE),
     
-    #change y axis title and set lines to every 20
+    #change y axis title and zoom to exclude negatives
     yaxis = list(
       title = 'New Cases',
-      dtick = 20),
+      rangemode = "nonnegative"),
     
     #hide the legend
     showlegend = FALSE
@@ -287,10 +287,10 @@ montgomeryPlot <- plot_ly(
       #hide x axis title
       title = FALSE),
     
-    #change y axis title and set lines to every 20
+    #change y axis title and zoom to exclude negatives
     yaxis = list(
       title = 'New Cases',
-      dtick = 20),
+      rangemode = "nonnegative"),
     
     #hide the legend
     showlegend = FALSE
@@ -329,10 +329,10 @@ fairfaxPlot <- plot_ly(
       #hide x axis title
       title = FALSE),
     
-    #change y axis title and set lines to every 20
+    #change y axis title and zoom to exclude negatives
     yaxis = list(
       title = 'New Cases',
-      dtick = 20),
+      rangemode = "nonnegative"),
     
     #hide the legend
     showlegend = FALSE
@@ -371,10 +371,10 @@ durhamPlot <- plot_ly(
       #hide x axis title
       title = FALSE),
     
-    #change y axis title and set lines to every 20
+    #change y axis title and zoom to exclude negatives
     yaxis = list(
       title = 'New Cases',
-      dtick = 20),
+      rangemode = "nonnegative"),
     
     #hide the legend
     showlegend = FALSE
@@ -413,10 +413,10 @@ salemPlot <- plot_ly(
       #hide x axis title
       title = FALSE),
     
-    #change y axis title and set lines to every 20
+    #change y axis title and zoom to exclude negatives
     yaxis = list(
       title = 'New Cases',
-      dtick = 20),
+      rangemode = "nonnegative"),
     
     #hide the legend
     showlegend = FALSE
@@ -425,7 +425,7 @@ salemPlot <- plot_ly(
 
 
 
-##                      View/export plot
+##                  View/export plot (for debugging)
 ##...............................................................
 
 # print(allPlot)
